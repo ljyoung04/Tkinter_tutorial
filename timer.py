@@ -97,7 +97,7 @@ class Timer(tk.Tk):
             self.after(1000,self.update_timer)
         elif total_second == 0:
             messagebox.showinfo("Timer","타이머가 종료되었습니다.")
-            self.start_btn.config(state='active')
+            self.start_btn.config(state='normal')
 
     def fmt_time(self,second):
         min, sec = divmod(second,60)
